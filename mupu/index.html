@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>木朴</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+            if (window.location.href.indexOf("?mobile") < 0) {
+                try {
+                    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                        // 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式
+                        $('head')
+                                .append('<link rel="stylesheet" href="css/mobile_middle.css" type="text/css" />')
+                                .append('<link rel="stylesheet" href="css/mobile_min.css" type="text/css" />');
+                    }
+                    else if (/iPad/i.test(navigator.userAgent)) {
+                        // 判断访问环境是 iPad 则加载以下样式
+                        $('head').append('<link href="css/index.css" rel="stylesheet" type="text/css"/>')
+                                .append('<link rel="stylesheet" href="css/mobile_middle.css" type="text/css" />')
+                                .append('<link rel="stylesheet" href="css/mobile_min.css" type="text/css" />');
+                    }
+                    else {
+                        // 判断访问环境是 其他移动设备 则加载以下样式
+                        $('head').append('<link href="css/index.css" rel="stylesheet" type="text/css"/>')
+                                .append('<link rel="stylesheet" href="css/mobile_middle.css" type="text/css" />')
+                                .append('<link rel="stylesheet" href="css/mobile_min.css" type="text/css" />');
+                    }
+                }
+                catch (e) {
+                }
+            }
+        }
+        else {
+            // 如果以上都不是，则加载以下样式
+            $('head').append('<link href="css/index.css" rel="stylesheet" type="text/css"/>');
+        }
+    </script>
+</head>
+
+<body>
+<div id="hidden">
+    <div id="head">
+        <img src="./img/logo.png" id="logo">
+    </div>
+    <div id="nav">
+        <div id="nav_production">
+            <a href="#">产&nbsp;&nbsp;品</a>
+            <hr>
+        </div>
+        <div id="nav_us">
+            <a href="#">我&nbsp;&nbsp;们</a>
+            <hr>
+        </div>
+        <div id="nav_cooperation">
+            <a href="#">合&nbsp;&nbsp;作</a>
+            <hr>
+        </div>
+        <div id="nav_recruit">
+            <a href="#">诚&nbsp;&nbsp;聘</a>
+            <hr>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div id="content_index">
+        <img src="img/index.jpg" id="index_picture">
+    </div>
+    <div id="content_production">
+        <img src="img/13.jpg">
+        <hr>
+    </div>
+    <div id="content_us">
+        <div id="content_us_text">
+            <p>2010年 夏末</p>
+
+            <p>制造与爱发生了化学反应，“木朴”诞生。</p>
+
+            <p>这里有更多 <span id="weibo_href">weibo.com/himupu</span></p>
+        </div>
+    </div>
+    <div id="content_cooperation">
+        <div id="content_cooperation_text">
+            <p>商业合作请联系</p>
+
+            <p>QQ: 1518783304</p>
+
+            <p>邮箱: himupu@sina.com</p>
+        </div>
+    </div>
+    <div id="content_recruit">
+        <div id="content_recruit_position">
+            <p>文具生活礼品类产品设计师</p>
+
+            <p>服装类产品设计师</p>
+
+            <p>插画师</p>
+
+            <p>采购经理</p>
+        </div>
+        <div id="content_recruit_require">
+            <p>相比其他公司，我们可能有些比较古怪的要求</p>
+
+            <div id="content_recruit_require_detail">
+                <p><span>*</span>首先如果你拥有自以为傲的艺术家性格，那您并不适合这份工作</p>
+
+                <p>我们需要的是为目标消费群体考虑的商业设计师，在你成为优秀的设计师的过程中没有那么傲娇，你会看到更多美好的东西；</p>
+
+                <p><span>*</span>我们喜欢充满活力与真诚的新人，其实我们并不需要有多少行业经验，但我们需要善于学习以及快速成长的能力</p>
+
+                <p>不需要多少行业经验，并不代表不要专业素养。对于会学习的人，挂在嘴里的不是“我不会”，而是“我试试”；</p>
+
+                <p><span>*</span>我们喜欢美食家，但不喜欢挑食的人</p>
+
+                <p>老板说：看到挑食的在菜盘子里解刨，会有吃掉他整个人的冲动；</p>
+
+                <p><span>*</span>我们要随和的人，但不是穿着邋遢，不冲厕所的人；</p>
+
+                <p><span>*</span>如果以上这些没问题，再加上你的兴趣广泛，并且擅长某些看似不务正业的勾当，那么团队会因你的加入变得更有意思；</p>
+            </div>
+        </div>
+        <div id="content_recruit_contact">
+            <p>与我们坐下来谈一谈 QQ: 1518783304 邮箱: himupu@sina.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+    // 点击显示箭头 以及显示相应的DIV
+    $(document).ready(
+            function () {
+                $("#nav a").click(
+                        function () {
+                            $(this).parent().siblings().children("hr").css("display", "none");
+                            $(this).siblings('hr').css("display", "block");
+//                            $(this).parent().siblings().children("a").css("text-decoration", "none");
+//                            $(this).css("text-decoration", "underline");
+                            $("#content").children().css("display", "none");
+                            var href_parent_id = $(this).parent().attr("id");
+                            switch (href_parent_id) {
+                                case "nav_production":
+                                    $("#content_production").css("display", "block");
+                                    break;
+                                case "nav_us":
+                                    $("#content_us").css("display", "block");
+                                    break;
+                                case "nav_cooperation":
+                                    $("#content_cooperation").css("display", "block");
+                                    break;
+                                case "nav_recruit":
+                                    $("#content_recruit").css("display", "block");
+                                    break;
+                                default :
+                                    break;
+                            }
+                        }
+                );
+
+                $("#logo").click(
+                        function () {
+                            $("#nav hr").css("display", "none");
+                            $("#content").children().css("display", "none");
+                            $("#content_index").css("display", "block");
+                        }
+                );
+
+                var current_production_img = 13;
+                // 产品页面上拉自动加载下一张图片，节省网络资源
+                $(window).scroll(function () {
+                    if ($("#content_production").css("display") != "none") {
+                        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                            // 加载下一张图片
+                            if (current_production_img < 22) {
+                                current_production_img++;
+//                                $("#content_production").append("<img src='img/" + current_production_img + ".jpg?" + Math.random() + "'>");
+                                $("#content_production").append("<img src='img/" + current_production_img + ".jpg'>");
+                                $("#content_production").append("<hr>");
+                            }
+                        }
+                    }
+                });
+
+                $("#weibo_href").click(
+                        function () {
+                            window.open("http://weibo.com/himupu");
+                        }
+                );
+            }
+    );
+</script>
+
+</body>
+</html>

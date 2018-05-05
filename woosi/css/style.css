@@ -1,0 +1,33 @@
+body {
+background-color:#1e2a5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background_img {
+   /* width: 100%; */
+    /*position: fixed;*/
+
+}
+
+.logo {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 330px;
+}
+
+@media only screen and (max-width: 980px) {
+    .logo {
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 330px;
+    }
+
+    .background_img {
+    }
+}

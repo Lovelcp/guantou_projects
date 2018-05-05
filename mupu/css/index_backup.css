@@ -1,0 +1,152 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+@media only screen and (min-width: 981px) {
+
+    html { overflow-x: hidden; overflow-y: auto; }
+
+    #hidden {
+        background: #ffffff;
+        height: 200px;
+        position: fixed;
+    }
+
+    #logo {
+        margin-left: 75px;
+        cursor: pointer;
+    }
+
+    #head {
+        position: fixed;
+        display: inline;
+        margin-top: 75px;
+    }
+
+    #nav {
+        position: fixed;
+        margin-top: 165px;
+        margin-left: 110px;
+    }
+
+    #nav div {
+        height: 40px;
+        width: 40px;
+    }
+
+    #nav a {
+        font-family: Microsoft YaHei;
+        font-size: 12px;
+        color: #000000;
+        text-decoration: none;
+        float: left;
+    }
+
+    /* 导航栏旁边的箭头 */
+    #nav img {
+        float: left;
+        position: relative;
+        left: 5px;
+        top: 5px;
+        display: none;
+    }
+
+    #content {
+        margin-left: 160px;
+        padding-top: 165px;
+    }
+
+    #content_index {
+        height: 400px;
+        width: 1500px;
+    }
+
+    #index_picture {
+        position: fixed;
+    }
+
+    #content_production {
+        display: none;
+        width: 500px;
+    }
+
+    #content_production img {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #content_us {
+        border: 1px solid #000000;
+        display: none;
+        height: 400px;
+    }
+
+    #content_us_text {
+        margin-left: 40%;
+        margin-top: 165px;
+    }
+
+    #content_us p {
+        letter-spacing: 2px;
+        font-family: SimSun;
+        font-size: 12px;
+    }
+
+    #content_cooperation {
+        border: 1px solid #000000;
+        display: none;
+        height: 400px;
+    }
+
+    #content_cooperation_text {
+        margin-left: 20px;
+        margin-top: 320px;
+    }
+
+    #content_cooperation p {
+        letter-spacing: 2px;
+        font-family: SimSun;
+        font-size: 12px;
+    }
+
+    #content_recruit {
+        border: 1px solid #000000;
+        display: none;
+        height: 400px;
+    }
+
+    #content_recruit_position {
+        margin-top: 20px;
+    }
+
+    #content_recruit_require {
+        margin-top: 40px;
+    }
+
+    #content_recruit_contact {
+        margin-top: 50px;
+    }
+
+    #content_recruit p {
+        margin-top: 6px;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        margin-left: 30px;
+        font-family: SimSun;
+        font-size: 12px;
+    }
+
+    #content_recruit_require_detail p {
+        margin-left: 37px;
+        position: relative;
+    }
+
+    #content_recruit_require span {
+        position: absolute;
+        left: -7px;
+    }
+}

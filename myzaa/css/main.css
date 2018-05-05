@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", serif;
+}
+
+#main-content {
+    text-align: center;
+    margin-top: 5%;
+    height: 450px;
+}
+
+/*隐藏*/
+#about-us, #weixin, #store {
+    display: none;
+}
+
+#index-pic, #about-us, #weixin, #store {
+    /*水平居中*/
+    text-align: center;
+    margin: auto;
+    /*设置宽高*/
+    height: 400px;
+    width: 400px;
+}
+
+#about-us p, #weixin p, #store p {
+    letter-spacing: 4px;
+}
+
+#about-us-pic {
+    margin-bottom: 20px;
+}
+
+#weixin-pic {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#weixin p {
+    padding-left: 6px;
+}
+
+#store {
+    padding-top: 40px;
+}
+
+#index-tab {
+    text-align: center;
+}
+
+#index-tab div {
+    display: inline;
+}
+
+#index-tab span {
+    /*字符间距*/
+    letter-spacing: 3px;
+    /*去掉由letter-spacing引起的最后一个字符的间距*/
+    margin-right: -3px;
+    color: black;
+    display: inline-block;
+}
+
+a:link, a:visited, a:hover, a:active {
+    /*没有自带的下划线*/
+    text-decoration: none;
+}
+
+#index-tab a:visited {
+    border-bottom: 2px solid black
+}
+
+#index-tab a:hover {
+    border-bottom: 2px solid black
+}
+
+#index-tab a:active {
+    border-bottom: 2px solid black
+}
+
+#store_link {
+    color: black;
+}
+
+#store_link:hover {
+    color: orangered;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 321px) {
+    #main-content {
+        margin-top: 40%;
+        height: 450px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    #about-us-pic {
+        height: 70px;
+        width: 70px;
+    }
+
+    #weixin-pic {
+        height: 200px;
+        width: 200px;
+    }
+}
